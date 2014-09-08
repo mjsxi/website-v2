@@ -1,12 +1,20 @@
-//further imporved by Matt
+//super mega impoved by Ally
 
-$img: 20;
-
-@for $i from 1 through $img {
+@for $i from 1 through 20 {
   .img-#{$i} {
     background-image: image-url($i + '.jpg');
   }
 }
+
+//further imporved by Matt
+
+// $img: 20;
+
+// @for $i from 1 through $img {
+//   .img-#{$i} {
+//     background-image: image-url($i + '.jpg');
+//   }
+// }
 
 //imporved upon by Ally
 
