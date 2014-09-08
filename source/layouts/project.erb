@@ -14,7 +14,9 @@
   </head>
 
   <body class="<%= page_classes %> debug">
-    <%= yield %>
-    <%= javascript_include_tag  "main" %>
+    <div id="fade">
+      <%= yield %>
+      <%= javascript_include_tag  "main" %>
+    </div>
   </body>
 </html>
