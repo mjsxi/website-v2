@@ -1,0 +1,23 @@
+
+//I know this is gross but I cant 
+//get compass to run so eh
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+      -ms-#{$name}: #{$argument};
+     -moz-#{$name}: #{$argument};
+       -o-#{$name}: #{$argument};
+          #{$name}: #{$argument};
+}
+
+//use this as an @extend
+//I know this is a scss sheet for 
+//mixins but this was one at one
+//point but decided it was better 
+//here
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

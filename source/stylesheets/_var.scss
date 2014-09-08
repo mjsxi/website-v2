@@ -1,0 +1,66 @@
+//TODO FIX THE THINGS HERE ON THIS PAGE
+
+$default-bg-color       : #F0F0F0;
+
+// breakpoints
+$break_xsmall         : 400px;
+$break_small          : 600px;
+$break_medium_small   : 728px;
+$break_medium         : 880px;
+$break_large_medium   : 950px;
+$break_large          : 1080px;
+$break_xlarge_large   : 1200px;
+$break_xlarge         : 1500px;
+$break_xxlarge        : 1600px;
+
+// z-index scale
+$z-index-1:   1;
+$z-index-2:   2;
+$z-index-3:   3;
+$z-index-4:   4;
+$z-index-5:   5;
+$z-index-6:   6;
+$z-index-7:   7;
+$z-index-8:   8;
+$z-index-9:   9;
+$z-index-10: 10;
+
+// z-index applications
+// homepage module specific
+
+// images are first layer
+$z-index-1--images:           $z-index-1;
+
+// overlays are below text
+$z-index-2--overlays:         $z-index-2;
+$z-index-2--eyebrow:          $z-index-2;
+$z-index-3--text:             $z-index-3;
+$z-index-3--buttons:          $z-index-3;
+
+$z-index-3--stb:              $z-index-3;
+
+
+$z-index-10--ad:              $z-index-10;
+$z-index-10--modals:          $z-index-10;
+
+// layout
+$default-width          : 1080px;
+$gutter-vertical        : 15px;
+$gutter-horizontal      : 25px;
+$sidebar-width          : 300px;
+$sidebar-width-narrow   : 160px;
+
+// campaigns
+$minimum-gutter-for-reskin    : 140px;
+
+// fonts
+$harriet: Harriet, serif;
+$harriet-display: 'Harriet display', $harriet;
+$alright: Alright Sans, sans-serif;
+
+$default-font-size    : 15px;
+$default-line-height  : (25px/$default-font-size);
+
+// animation speeds
+$default-animation-speed    : 100ms;
+$mobile-menu-slide-speed    : 100ms;

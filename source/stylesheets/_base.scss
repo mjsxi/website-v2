@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $default-bg-color;
+}
+
+.l-container {
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  max-width: 60em;
+  width: 100%;
+  @media (max-width: $break_large) {
+    width: 90%;
+  }
+}

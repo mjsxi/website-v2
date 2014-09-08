@@ -1,0 +1,38 @@
+$m: '.m-project';
+
+// main block for the 
+#{$m}--block {
+  width: 100%;
+  @extend .clearfix;
+}
+
+#{$m} {
+  @include vendor-prefix(transition, all 0.3s);
+  min-height: 200px;
+  float: left;
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.s1 {
+  width: 25%;
+  @media (max-width: $break_small) {
+    width: 50%;
+  }
+}
+
+.s2 {
+  width: 50%;
+}
+
+.s3 {
+  width: 75%;
+  @media (max-width: $break_small) {
+    width: 50%;
+  }
+}
+
+.s4 {
+  width: 100%;
+}
