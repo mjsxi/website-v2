@@ -6,6 +6,8 @@ $m: '.m-project';
   @extend .clearfix;
 }
 
+// effects the first two blocks on 
+// the homepage
 #{$m}_head--container{
   #{$m} {
     h2 {
@@ -23,12 +25,42 @@ $m: '.m-project';
     }
   }
   .s3 {
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: sans-serif;
     @media (max-width: $break_small) {
       width: 100%;
     }
   }
+  p {
+    margin: 1em 0;
+    font-family: $alright;
+  }
+  a {
+    @include vendor-prefix(transition, all 0.3s);
+    font-family: $harriet-display;
+    font-style: italic;
+    font-size: 1.05em;
+    &:hover {
+      opacity: .8;
+    }
+    &:nth-child(1){
+      color: $voxmedia;
+    }
+    &:nth-child(2){
+      color: $voxdotcom;
+    }
+    &:nth-child(3){
+      color: $polygon;
+    }
+    &:nth-child(4){
+      color: $theverge;
+    }
+  }
 }
 
+// this effects all project blocks
 #{$m} {
   @include vendor-prefix(transition, all 0.3s);
   background-position: center center; 
@@ -43,6 +75,7 @@ $m: '.m-project';
   }
 }
 
+// sizes the porjects blocks
 .s1 {
   width: 25%;
   @media (max-width: $break_small) {

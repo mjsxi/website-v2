@@ -4,6 +4,11 @@
 
 body {
   background-color: $default-bg-color;
+  color: $default-font-color;
+}
+
+img {
+  max-width: 100%;
 }
 
 .l-container {
@@ -20,4 +25,14 @@ body {
 
 #fade {
   opacity: 0;
+}
+
+.nav {
+  @include vendor-prefix(transition, all 0.3s);
+  margin-bottom: 2.5%;
+  min-width: 36px;
+  width: 5%;
+  &:hover {
+    opacity: .8;
+  }
 }

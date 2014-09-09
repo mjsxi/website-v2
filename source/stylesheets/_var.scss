@@ -1,7 +1,12 @@
 //TODO FIX THE THINGS HERE ON THIS PAGE
 
 $default-bg-color     : #F0F0F0;
+$default-font-color   : #4C4C4C;
 $white                : #FFFFFF;
+$voxmedia             : #E77D24;
+$voxdotcom            : #6F96A8;
+$polygon              : #8E2B88;
+$theverge             : #FA4B2A;
 
 // breakpoints
 $break_xsmall         : 400px;
@@ -55,9 +60,8 @@ $sidebar-width-narrow   : 160px;
 $minimum-gutter-for-reskin    : 140px;
 
 // fonts
-$harriet: Harriet, serif;
-$harriet-display: 'Harriet display', $harriet;
-$alright: Alright Sans, sans-serif;
+$harriet-display: 'Harriet Display', serif;
+$alright: 'Alright Sans', sans-serif;
 
 $default-font-size    : 15px;
 $default-line-height  : (25px/$default-font-size);
