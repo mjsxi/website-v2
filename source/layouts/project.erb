@@ -15,8 +15,12 @@
 
   <body class="<%= page_classes %> debug">
     <div id="fade">
-      <%= yield %>
-      <%= javascript_include_tag  "main" %>
+      <div class="l-container">
+        <%= partial "partials/_nav" %>
+        <%= yield %>
+        <%= partial "partials/_projects-block" %>
+      </div>
     </div>
+    <%= javascript_include_tag  "main" %>
   </body>
 </html>
