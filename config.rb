@@ -35,17 +35,18 @@
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
-# Reload the browser automatically whenever files change
-activate :livereload
-
-activate :directory_indexes
-
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
 #     "Helping"
 #   end
 # end
+
+# Reload the browser automatically whenever files change
+activate :livereload
+
+# Makes URL's pretty
+activate :directory_indexes
 
 set :css_dir, 'stylesheets'
 
