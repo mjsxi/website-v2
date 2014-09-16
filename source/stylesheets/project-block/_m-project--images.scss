@@ -1,6 +1,6 @@
 //super mega impoved by Ally
 
-@for $i from 1 through 20 {
+@for $i from 1 through 21 {
   .img-#{$i} {
     background-image: image-url($i + '.jpg');
   }

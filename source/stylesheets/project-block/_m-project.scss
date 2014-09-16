@@ -32,6 +32,11 @@ $m: '.m-project';
     @media (max-width: $break_small) {
       width: 100%;
     }
+    @media (max-width: $break_small) {
+      padding-left: 0em;
+      padding-right: 0em;
+      padding-bottom: 1em;
+    }
   }
   p {
     margin: 1em 0;
@@ -68,17 +73,23 @@ $m: '.m-project';
   float: left;
   min-height: 200px;
   @media (max-width: $break_small) {
-    min-height: 175px;
+    min-height: 150px;
   }
   &:hover {
     opacity: .8;
   }
 }
 
+.img-1 {
+  @media (max-width: $break_large_medium) {
+    background-position: initial;
+  }
+}
+
 // sizes the porjects blocks
 .s1 {
   width: 25%;
-  background-color: red;
+  //background-color: red;
   @media (max-width: $break_small) {
     width: 50%;
   }
@@ -86,12 +97,12 @@ $m: '.m-project';
 
 .s2 {
   width: 50%;
-  background-color: green;
+  //background-color: green;
 }
 
 .s3 {
   width: 75%;
-  background-color: blue;
+  //background-color: blue;
   @media (max-width: $break_small) {
     width: 100%;
   }
@@ -99,7 +110,7 @@ $m: '.m-project';
 
 .s4 {
   width: 100%;
-  background-color: black;
+  //background-color: black;
 }
 
 //This changed the river to be whatever

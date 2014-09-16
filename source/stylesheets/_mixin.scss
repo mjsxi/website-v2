@@ -10,12 +10,27 @@
 }
 
 //use this for @ font face
-@mixin fontface($name) {
+@mixin fontface($name,$style,$weight) {
   @font-face {
     font-family: '#{$name}';
+    src: font-url('#{$name}'+'.eot') format('eot');
     src: font-url('#{$name}'+'.woff') format('woff'),
-         font-url('#{$name}'+'.ttf') format('truetype');
+         font-url('#{$name}'+'.ttf') format('truetype'),
+         font-url('#{$name}'+'.svg') format('svg');
+         font-style: $style;
+         font-weight: $weight;
   }
+}
+
+//calculates rems and ems
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@function calculateEm($size) {
+  $emSize: $size / 16px;
+  @return $emSize * 1rem;
 }
 
 //use this as an @extend

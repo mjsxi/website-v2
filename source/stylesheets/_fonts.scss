@@ -1,3 +1,2 @@
-@include fontface(alrightsans);
-
-@include fontface(harrietdisplay);
+@include fontface(harrietdisplay, italic, 600);
+@include fontface(alrightsans, normal, 400);

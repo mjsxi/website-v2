@@ -9,15 +9,13 @@ $polygon              : #8E2B88;
 $theverge             : #FA4B2A;
 
 // breakpoints
-$break_xsmall         : 400px;
-$break_small          : 600px;
-$break_medium_small   : 728px;
-$break_medium         : 880px;
-$break_large_medium   : 950px;
-$break_large          : 1080px;
-$break_xlarge_large   : 1200px;
-$break_xlarge         : 1500px;
-$break_xxlarge        : 1600px;
+$break_xsmall         : calculateEm(400px);
+$break_small          : calculateEm(600px);
+$break_medium_small   : calculateEm(728px);
+$break_medium         : calculateEm(880px);
+$break_large_medium   : calculateEm(950px);
+$break_large          : calculateEm(1080px);
+$break_xlarge         : calculateEm(1200px);
 
 // z-index scale
 $z-index-1:   1;
@@ -54,14 +52,14 @@ $default-width          : 1080px;
 $gutter-vertical        : 15px;
 $gutter-horizontal      : 25px;
 $sidebar-width          : 300px;
-$sidebar-width-narrow   : 160px;
+$sidebar-width-narrow   : 160px; 
 
 // campaigns
 $minimum-gutter-for-reskin    : 140px;
 
 // fonts
-$harriet-display: 'Harriet Display', serif;
-$alright: 'Alright Sans', sans-serif;
+$harriet-display: 'harriet display', serif;
+$alright: 'alright sans', sans-serif;
 
 $default-font-size    : 15px;
 $default-line-height  : (25px/$default-font-size);

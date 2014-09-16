@@ -48,9 +48,6 @@ activate :livereload
 # Makes URL's pretty
 activate :directory_indexes
 
-# Optimizes Images
-activate :imageoptim
-
 # Sets Directories
 set :css_dir, 'stylesheets'
 
@@ -63,17 +60,20 @@ set :font_dir, 'fonts'
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
-  # Enable cache buster
+  # # Enable cache buster
   # activate :asset_hash
 
-  # Use relative URLs
+  # # Use relative URLs
   # activate :relative_assets
 
-  # Or use a different image path
+  # Makes URL's pretty
+  activate :directory_indexes
+
+  # # Or use a different image path
   # set :http_prefix, "/images/"
 end

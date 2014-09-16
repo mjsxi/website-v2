@@ -2,7 +2,7 @@
 //genius, ya'll should respect her
 
 // config
-$debug: true;
+$debug: false;
 
 // create sass list to pass media query data
 // if a breakpoint name changes, remember to
@@ -14,9 +14,7 @@ $mq-sync:
   break_medium $break_medium,
   break_large_medium $break_large_medium,
   break_large $break_large,
-  break_xlarge_large $break_xlarge_large,
-  break_xlarge $break_xlarge,
-  break_xxlarge $break_xxlarge
+  break_xlarge_large $break_xlarge
 ;
 
 // build each media query for js ingestion

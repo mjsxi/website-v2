@@ -16,14 +16,18 @@ img {
 }
 
 .l-container {
-  margin-bottom: 3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3em;
   max-width: 60em;
   width: 100%;
   @media (max-width: $break_large) {
     width: 90%;
+  }
+  @media (max-width: $break_small) {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
   }
 }
 
@@ -33,7 +37,7 @@ img {
 
 .nav {
   @include vendor-prefix(transition, all 0.3s);
-  margin-bottom: 2.5%;
+  margin-bottom: 1.5em;
   min-width: 36px;
   width: 5%;
   &:hover {
