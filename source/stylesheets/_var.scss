@@ -32,31 +32,6 @@ $z-index-10: 10;
 // z-index applications
 // homepage module specific
 
-// images are first layer
-$z-index-1--images:           $z-index-1;
-
-// overlays are below text
-$z-index-2--overlays:         $z-index-2;
-$z-index-2--eyebrow:          $z-index-2;
-$z-index-3--text:             $z-index-3;
-$z-index-3--buttons:          $z-index-3;
-
-$z-index-3--stb:              $z-index-3;
-
-
-$z-index-10--ad:              $z-index-10;
-$z-index-10--modals:          $z-index-10;
-
-// layout
-$default-width          : 1080px;
-$gutter-vertical        : 15px;
-$gutter-horizontal      : 25px;
-$sidebar-width          : 300px;
-$sidebar-width-narrow   : 160px; 
-
-// campaigns
-$minimum-gutter-for-reskin    : 140px;
-
 // fonts
 $harriet-display: 'harriet display', serif;
 $alright: 'alright sans', sans-serif;
