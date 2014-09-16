@@ -3,7 +3,7 @@ $m: '.m-project';
 // main block for the 
 #{$m}--block {
   width: 100%;
-  @extend .clearfix;
+  @extend %clearfix;
 }
 
 // effects the first two blocks on 
@@ -78,6 +78,7 @@ $m: '.m-project';
 // sizes the porjects blocks
 .s1 {
   width: 25%;
+  //background-color: red;
   @media (max-width: $break_small) {
     width: 50%;
   }
@@ -85,15 +86,33 @@ $m: '.m-project';
 
 .s2 {
   width: 50%;
+  //background-color: green;
 }
 
 .s3 {
   width: 75%;
+  //background-color: blue;
   @media (max-width: $break_small) {
-    width: 50%;
+    width: 100%;
   }
 }
 
 .s4 {
   width: 100%;
+  //background-color: black;
+}
+
+//This changed the river to be whatever
+//I need it to be so there is no weirdness
+#{$m}--block {
+  a:last-child {
+    .s1,
+    .s2,
+    .s3,
+    .s4 {
+      @media (max-width: $break_small) {
+        width: 100%;
+      }
+    }
+  }
 }

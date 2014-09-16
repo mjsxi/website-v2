@@ -12,13 +12,13 @@
 ###
 
 # Per-page layout changes:
-#
+
 # With no layout
 # page "/path/to/file.html", :layout => false
-#
+
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
-#
+
 # A path which all have the same layout
 # with_layout :admin do
 #   page "/admin/*"
@@ -48,6 +48,10 @@ activate :livereload
 # Makes URL's pretty
 activate :directory_indexes
 
+# Optimizes Images
+activate :imageoptim
+
+# Sets Directories
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -71,5 +75,5 @@ configure :build do
   # activate :relative_assets
 
   # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  # set :http_prefix, "/images/"
 end

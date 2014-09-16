@@ -1,0 +1,47 @@
+$m: '.m-project--page';
+
+#{$m} {
+  width: 80%;
+  margin: 0 auto;
+  @media (max-width: $break_small) {
+    width: 100%;
+  }
+}
+
+.video-container,
+.issuu-container {
+  margin-top:5%;
+  position: relative;
+  padding-bottom: 53.4%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.issuu-container {
+  margin: 0 auto;
+  max-width:740px;
+}
+
+#{$m} {
+  h1 {
+    font-family: $harriet-display;
+    font-style: italic;
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: .5em;
+    margin-bottom: .35em;
+  }
+  p {
+    font-family: $alright;
+    font-size: 1em;
+    margin-bottom: 1em;
+    line-height: 1.35em;
+  }
+}

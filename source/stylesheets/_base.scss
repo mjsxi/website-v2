@@ -1,10 +1,14 @@
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   background-color: $default-bg-color;
   color: $default-font-color;
+  @media (max-width: $break_small) {
+    font-size: .8em;
+  }
 }
 
 img {

@@ -23,7 +23,7 @@
 //mixins but this was one at one
 //point but decided it was better 
 //as an extend so its here now
-.clearfix {
+%clearfix {
   &:after {
     content: "";
     display: table;
