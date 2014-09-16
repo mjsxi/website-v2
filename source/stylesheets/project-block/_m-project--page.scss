@@ -3,6 +3,7 @@ $m: '.m-project--page';
 #{$m} {
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 2em;
   @media (max-width: $break_small) {
     width: 100%;
   }

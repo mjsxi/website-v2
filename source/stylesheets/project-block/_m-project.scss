@@ -78,7 +78,7 @@ $m: '.m-project';
 // sizes the porjects blocks
 .s1 {
   width: 25%;
-  //background-color: red;
+  background-color: red;
   @media (max-width: $break_small) {
     width: 50%;
   }
@@ -86,12 +86,12 @@ $m: '.m-project';
 
 .s2 {
   width: 50%;
-  //background-color: green;
+  background-color: green;
 }
 
 .s3 {
   width: 75%;
-  //background-color: blue;
+  background-color: blue;
   @media (max-width: $break_small) {
     width: 100%;
   }
@@ -99,7 +99,7 @@ $m: '.m-project';
 
 .s4 {
   width: 100%;
-  //background-color: black;
+  background-color: black;
 }
 
 //This changed the river to be whatever
