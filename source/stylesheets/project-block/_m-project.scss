@@ -9,6 +9,10 @@ $m: '.m-project';
 // effects the first two blocks on 
 // the homepage
 #{$m}_head--container{
+  @include value-prefix (display, flex);
+  @media (max-width: $break_small) {
+    display: block;
+  }
   #{$m} {
     h2 {
       color: $white;
@@ -25,44 +29,49 @@ $m: '.m-project';
     }
   }
   .s3 {
-    padding-top: 1em;
+    padding-top: .5em;
     padding-left: 1em;
-    padding-right: 1em;
-    font-family: sans-serif;
     @media (max-width: $break_small) {
       width: 100%;
     }
     @media (max-width: $break_small) {
       padding-left: 0em;
-      padding-right: 0em;
       padding-bottom: 1em;
     }
   }
   p {
     margin: 1em 0;
     font-family: $alright;
+    &:first-child {
+      a {
+        color: $voxmedia;
+      }
+    }
+    &:last-child {
+      a {
+        color: $default-color;
+      }
+    }
   }
   a {
-    @include vendor-prefix(transition, all 0.3s);
+    @include vendor-prefix (transition, all 0.3s);
     font-family: $harriet-display;
     font-style: italic;
     font-size: 1.05em;
     &:hover {
-      opacity: .8;
+      opacity: .6;
     }
     &:nth-child(1){
-      color: $voxmedia;
-    }
-    &:nth-child(2){
       color: $voxdotcom;
     }
-    &:nth-child(3){
+    &:nth-child(2){
       color: $polygon;
     }
-    &:nth-child(4){
+    &:nth-child(3){
       color: $theverge;
     }
   }
+  @extend %clearfix;
 }
 
 // this effects all project blocks

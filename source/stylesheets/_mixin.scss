@@ -8,6 +8,16 @@
           #{$name}: #{$argument};
 }
 
+//This is also gross but I cant 
+//get compass to run so staph
+@mixin value-prefix($name, $argument) {
+  #{$name}: -webkit-#{$argument};
+  #{$name}:     -ms-#{$argument};
+  #{$name}:    -moz-#{$argument};
+  #{$name}:      -o-#{$argument};
+  #{$name}:         #{$argument};
+}
+
 //use this for @ font face
 @mixin fontface($name,$style,$weight) {
   @font-face {
