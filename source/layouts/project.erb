@@ -10,6 +10,9 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "" %></title>
 
+    <!-- This is used for the favicon -->
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
     <%= stylesheet_link_tag "style" %>
   </head>
 
@@ -20,6 +23,7 @@
         <%= yield %>
         <%= partial "partials/_projects-block" %>
       </div>
+      <%= partial "partials/_no-nav" %>
     </div>
     <%= javascript_include_tag  "main" %>
   </body>

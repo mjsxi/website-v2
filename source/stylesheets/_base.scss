@@ -16,18 +16,28 @@ img {
 }
 
 .l-container {
+  background-color: $default-bg-color;
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 220px;
   margin-left: auto;
   margin-right: auto;
   max-width: 60em;
+  padding-bottom: 2em;
   width: 100%;
   @media (max-width: $break_large) {
     width: 90%;
   }
   @media (max-width: $break_small) {
     margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 220px;
+    padding-bottom: 1.5em;
+  }
+}
+
+.l-container.hp {
+  margin-bottom: 0px;
+  @media (max-width: $break_small) {
+    margin-bottom: 0px;
   }
 }
 
