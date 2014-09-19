@@ -3,7 +3,7 @@ $m: '.m-bottom--nav';
 #{$m} {
   @include value-prefix (display, flex);
   bottom: 0px;
-  height: 250px;
+  height: 270px;
   position: fixed;
   width: 100%;
   z-index: -1;
@@ -20,7 +20,7 @@ $m: '.m-bottom--nav';
 
 #{$m}_container {
   max-width: 59.9em;
-  width: 99.9%;
+  width: 99.5%;
   margin-left: auto;
   margin-right: auto;
   background-color: $default-font-color;
