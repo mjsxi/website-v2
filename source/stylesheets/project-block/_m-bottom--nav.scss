@@ -3,7 +3,7 @@ $m: '.m-bottom--nav';
 #{$m} {
   @include value-prefix (display, flex);
   bottom: 0px;
-  height: 220px;
+  height: 250px;
   position: fixed;
   width: 100%;
   z-index: -1;
