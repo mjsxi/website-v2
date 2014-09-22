@@ -31,16 +31,7 @@
   }
 }
 
-//calculates rems and ems
-@function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return $remSize * 1rem;
-}
-
-@function calculateEm($size) {
-  $emSize: $size / 16px;
-  @return $emSize * 1rem;
-}
+//This area after is used for extends
 
 //use this as an @extend
 //I know this is a scss sheet for 
@@ -52,5 +43,14 @@
     content: "";
     display: table;
     clear: both;
+  }
+}
+
+%scale {
+  @media (min-width: $break_medium){
+    @include vendor-prefix (transition, all 0.3s);
+    &:hover {
+      @include vendor-prefix(transform, scale(1.25,1.25));
+    }
   }
 }

@@ -1,5 +1,16 @@
-//TODO FIX THE THINGS HERE ON THIS PAGE
 
+//calculates rems and ems
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@function calculateEm($size) {
+  $emSize: $size / 16px;
+  @return $emSize * 1rem;
+}
+
+//defaults
 $default-bg-color     : #F0F0F0;
 $default-font-color   : #4C4C4C;
 $white                : #FFFFFF;
