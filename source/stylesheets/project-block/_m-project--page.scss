@@ -44,10 +44,13 @@ $m: '.m-project--page';
     margin-bottom: 1em;
     li {
       font-family: $alright;
-      font-size: 1em;
+      font-size: .8em;
       margin-bottom: .5em;
       font-weight: 600;
-      color: lighten($default-font-color, 30%);
+      color: $default-bg-color;
+      background-color: $default-color;
+      padding: .25em;
+      display: inline-block;
     }
   }
   p {
