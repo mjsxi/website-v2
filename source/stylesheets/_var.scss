@@ -16,7 +16,7 @@ $default-font-color   : #4C4C4C;
 $white                : #FFFFFF;
 $voxmedia             : #E77D24;
 $voxdotcom            : #6F96A8;
-$polygon              : #8E2B88;
+$polygon              : #D10E54;
 $theverge             : #FA4B2A;
 $default-color        : #60BDAC;
 
@@ -50,6 +50,9 @@ $alright: 'alrightsans', sans-serif;
 
 $default-font-size    : 15px;
 $default-line-height  : (25px/$default-font-size);
+
+// nav bottom
+$nav-bottom           : 220px;
 
 // animation speeds
 $default-animation-speed    : 100ms;

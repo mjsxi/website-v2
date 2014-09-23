@@ -61,12 +61,10 @@ $m: '.m-project--page';
   }
   a {
     @include vendor-prefix (transition, all 0.3s);
+    @include hover(.6);
     color: $default-color;
     font-family: $harriet-display;
     font-style: italic;
     font-size: 1.15em;
-    &:hover {
-      opacity: .6;
-    }
   }
 }

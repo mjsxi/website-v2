@@ -31,6 +31,12 @@
   }
 }
 
+@mixin hover($amount) {
+  &:hover {
+    opacity: $amount;
+  }
+}
+
 //This area after is used for extends
 
 //use this as an @extend

@@ -3,7 +3,7 @@ $m: '.m-bottom--nav';
 #{$m} {
   @include value-prefix (display, flex);
   bottom: 0px;
-  height: 270px;
+  height: $nav-bottom;
   position: fixed;
   width: 100%;
   z-index: -1;
@@ -36,13 +36,11 @@ $m: '.m-bottom--nav';
     line-height: 1.35em;
     a {
       @include vendor-prefix (transition, all 0.3s);
+      @include hover(.6);
       font-family: $harriet-display;
       font-style: italic;
       font-size: 1.15em;
       color: $default-color;
-      &:hover {
-        opacity: .6;
-      }
     }
   }
 }

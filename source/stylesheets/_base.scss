@@ -18,18 +18,18 @@ img {
 .l-container {
   background-color: $default-bg-color;
   margin-top: 2em;
-  margin-bottom: 270px;
+  margin-bottom: $nav-bottom;
   margin-left: auto;
   margin-right: auto;
   max-width: 60em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   width: 100%;
   @media (max-width: $break_large) {
     width: 90%;
   }
   @media (max-width: $break_small) {
     margin-top: 1.5em;
-    margin-bottom: 270px;
+    margin-bottom: $nav-bottom;
     padding-bottom: 1.5em;
   }
 }
@@ -47,10 +47,8 @@ img {
 
 .nav {
   @include vendor-prefix(transition, all 0.3s);
+  @include hover(.8);
   margin-bottom: 1.5em;
   min-width: 36px;
   width: 5%;
-  &:hover {
-    opacity: .8;
-  }
 }

@@ -14,6 +14,7 @@ $m: '.m-project';
     display: block;
   }
   #{$m} {
+    @include hover(1);
     h2 {
       color: $white;
       font-family: sans-serif;
@@ -23,9 +24,6 @@ $m: '.m-project';
       @media (max-width: $break_small) {
         font-size: 9em;
       }
-    }
-    &:hover {
-      opacity: 1;
     }
   }
   .s3 {
@@ -55,12 +53,10 @@ $m: '.m-project';
   }
   a {
     @include vendor-prefix (transition, all 0.3s);
+    @include hover(.6);
     font-family: $harriet-display;
     font-style: italic;
     font-size: 1.05em;
-    &:hover {
-      opacity: .6;
-    }
     &:nth-child(1){
       color: $voxdotcom;
     }
@@ -74,18 +70,42 @@ $m: '.m-project';
   @extend %clearfix;
 }
 
+#{$m}--footer {
+  hr {
+    border: none;
+    border-bottom: 1px solid #C6C6C6;
+    &:first-child {
+      margin-top: 1.5em;
+    }
+  }
+  .link--container {
+    margin: 1em auto;
+    display: table;
+  }
+  a {
+    @include vendor-prefix(transition, all 0.3s);
+    @include hover(.6);
+    color: $default-color;
+    display: inline-block;
+    font-family: $harriet-display;
+    font-size: 1.05em;
+    font-style: italic;
+    margin: 0 .5em;
+    text-align: center;
+  }
+}
+
+
 // this effects all project blocks
 #{$m} {
   @include vendor-prefix(transition, all 0.3s);
+  @include hover(.8);
   background-position: center center; 
   background-size: cover;
   float: left;
   min-height: 200px;
   @media (max-width: $break_small) {
     min-height: 150px;
-  }
-  &:hover {
-    opacity: .8;
   }
 }
 
