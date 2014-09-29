@@ -7,6 +7,9 @@ gem "middleman-blog"
 gem "middleman-minify-html"
 gem "nokogiri"
 
+# For feed.xml.builder
+gem "builder", "~> 3.0"
+
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0" 
 
